@@ -9,6 +9,9 @@ missing_number: missing_number.cpp
 
 repetitions: repetitions.cpp
 	$(CXX) $(CXXFLAGS) repetitions.cpp -o ./builds/repetitions
+	
+increasing_array: increasing_array.cpp
+	$(CXX) $(CXXFLAGS) increasing_array.cpp -o ./builds/increasing_array
 
 clean:
 	rm ./builds/*
