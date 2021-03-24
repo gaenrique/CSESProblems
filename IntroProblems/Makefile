@@ -6,5 +6,9 @@ weird_algorithm: weird_algorithm.cpp
 
 missing_number: missing_number.cpp
 	$(CXX) $(CXXFLAGS) missing_number.cpp -o ./builds/missing_number
+
+repetitions: repetitions.cpp
+	$(CXX) $(CXXFLAGS) repetitions.cpp -o ./builds/repetitions
+
 clean:
 	rm ./builds/*
