@@ -7,13 +7,10 @@ int main()
     long n;
     cin >> n;
     long total = (n * (n + 1)) / 2;
-    cin.ignore();
-    string s;
-    getline(cin, s);
-    stringstream ss(s);
-    int num;
-    while (ss >> num)
+    long num;
+    for (long i = 0; i < n - 1; i++)
     {
+        cin >> num;
         total -= num;
     }
     cout << total << endl;

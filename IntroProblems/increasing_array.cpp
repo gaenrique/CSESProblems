@@ -9,14 +9,11 @@ int main()
     ll n;
     cin >> n;
     ll moves = 0;
-    string line;
-    cin.ignore();
-    getline(cin, line);
-    stringstream ss(line);
     ll curr;
     ll previous = INT_MIN;
-    while (ss >> curr)
+    for (ll i = 0; i < n; i++)
     {
+        cin >> curr;
         if (previous == INT_MIN)
         {
             previous = curr;
