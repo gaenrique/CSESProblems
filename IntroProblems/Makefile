@@ -13,5 +13,8 @@ repetitions: repetitions.cpp
 increasing_array: increasing_array.cpp
 	$(CXX) $(CXXFLAGS) increasing_array.cpp -o ./builds/increasing_array
 
+permutations: permutations.cpp
+	$(CXX) $(CXXFLAGS) permutations.cpp -o ./builds/permutations
+
 clean:
 	rm ./builds/*
