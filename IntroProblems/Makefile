@@ -16,5 +16,8 @@ increasing_array: increasing_array.cpp
 permutations: permutations.cpp
 	$(CXX) $(CXXFLAGS) permutations.cpp -o ./builds/permutations
 
+number_spiral: number_spiral.cpp
+	$(CXX) $(CXXFLAGS) number_spiral.cpp -o ./builds/number_spiral
+
 clean:
 	rm ./builds/*
