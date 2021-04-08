@@ -12,5 +12,8 @@ apartments: apartments.cpp
 ferris_wheel: ferris_wheel.cpp
 	$(CXX) $(CXXFLAGS) ferris_wheel.cpp -o ./builds/ferris_wheel
 
+concert_tickets: concert_tickets.cpp
+	$(CXX) $(CXXFLAGS) concert_tickets.cpp -o ./builds/concert_tickets
+
 clean:
 	rm ./builds/*
