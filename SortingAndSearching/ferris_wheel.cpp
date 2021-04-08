@@ -13,14 +13,13 @@ int main()
         cin >> weight;
         weights.push_back(weight);
     }
-    // Sorting in descending order allows for more efficient
-    // algorithm
-    sort(weights.begin(), weights.end(), greater<int>());
+    // Sorting allows for more efficient algorithm
+    sort(weights.begin(), weights.end());
     int re = 0;
     int i = 0;
     int j = weights.size() - 1;
     int childrenLeft = weights.size();
-    // Compares current heaviest with current lightest
+    // Compares current lightest with current heaviest 
     while (i < j)
     {
         int combinedWeight = weights[i] + weights[j];
@@ -36,7 +35,7 @@ int main()
         else
         {
             re++;
-            i++;
+            j--;
             childrenLeft--;
         }
     }
